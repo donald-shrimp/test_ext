@@ -1,31 +1,13 @@
 {
-    "manifest_version": 2,
-    "name": "test_ext",
-    "short_name":"test",
-    "description": "拡張機能の説明が入るよ",
+    "name": "Test Chrome-Extension",
     "version": "1.0",
-    "icons": {
-        "32": "icon_32.png",
-        "48": "icon_48.png",
-        "128": "icon_128.png"
-    },
-    "content_scripts": [{
-        "matches": ["http://*/*", "https://*/*" ],
-        "js": ["content_scripts.js"],
-        "css": ["content_scripts.css"]
-    }],
+    "description": "これはChrome拡張機能のテストです。",
+
+    "permissions": ["storage"],
     "background": {
-        "scripts": ["background.js"]
+      "scripts": ["background.js"],
+      "persistent": false
     },
-    "browser_action": {
-        "default_icon": "icon_32.png",
-        "default_title": "",
-         "default_popup": "popup.html"
-    },
-    "permissions": [
-        "tabs",
-        "background",
-        "http://*/*",
-        "https://*/*"
-    ]
+
+    "manifest_version": 2
 }
