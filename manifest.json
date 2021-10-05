@@ -2,7 +2,7 @@
     "name": "Test Chrome-Extension",
     "version": "1.0",
     "description": "これはChrome拡張機能のテストです。",
-
+    "options_page":"options.html",
     "permissions": ["activeTab","declarativeContent","storage"],
     "background": {
       "scripts": ["background.js"],
